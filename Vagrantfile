@@ -7,7 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "ubuntu/trusty64"
 
-  private_ip = "{{ private_ip }}"
+  private_ip = "192.168.50.10"
   cpu = ENV['VAGRANT_CPU'] || 2
   ram = ENV['VAGRANT_MEMORY'] || 1024
 

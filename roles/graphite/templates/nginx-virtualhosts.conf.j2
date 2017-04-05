@@ -58,8 +58,8 @@ server {
     listen 81;
     server_name {{ graphite.nginx_server_name }};
 
-    auth_basic                 "Restricted";
-    auth_basic_user_file       passwdfile;
+#    auth_basic                 "Restricted";
+#    auth_basic_user_file       passwdfile;
 
     open_log_file_cache max=1000 inactive=20s min_uses=2 valid=1m;
 
